@@ -86,8 +86,8 @@ class PostsController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id){
+
         $post = Post::find($id);
         $post->update($request->all());
 
@@ -105,8 +105,8 @@ class PostsController extends Controller
      * @param  \App\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id){
+        
         $post = Post::find($id);
         $deletedPost = $post;
         $post->delete();
