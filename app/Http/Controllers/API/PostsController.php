@@ -93,7 +93,7 @@ class PostsController extends Controller
 
         $response = array();
         $response["post"] = new PostResource($post);
-        $response["message"] = "Retrieved successfully";
+        $response["message"] = "Updated successfully";
 
         return response($response, 200);
 
