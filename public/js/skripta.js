@@ -3,7 +3,7 @@ let token = null;
 function register(event){
     event.preventDefault();
 
-    let url = "http://apitest1.test/api/register";
+    let url = "http://laravelpassportapi.test/api/register";
 
     let data = {
         name: "šaban",
@@ -38,7 +38,7 @@ function register(event){
 function login(event){
     event.preventDefault();
 
-    let url = "http://apitest1.test/api/login";
+    let url = "http://laravelpassportapi.test/api/login";
 
     let data = {
         email: "veljkos82@gmail.com",
@@ -72,7 +72,7 @@ function createPost(event){
     
     event.preventDefault();
 
-    let url = "http://apitest1.test/api/post";
+    let url = "http://laravelpassportapi.test/api/post";
 
     let data = {
         title: "ajaxPost1",
@@ -110,7 +110,7 @@ function getPost(event){
     event.preventDefault();
 
     let postId=1;
-    let url = "http://apitest1.test/api/post/"+postId;
+    let url = "http://laravelpassportapi.test/api/post/"+postId;
 
     $.ajax({
         url: url,
@@ -141,7 +141,7 @@ function getAllPosts(event){
     
     event.preventDefault();
 
-    let url = "http://apitest1.test/api/post";
+    let url = "http://laravelpassportapi.test/api/post";
 
     $.ajax({
         url: url,
@@ -173,7 +173,7 @@ function updatePost(event){
     event.preventDefault();
 
     let postId=2;
-    let url = "http://apitest1.test/api/post/"+postId;
+    let url = "http://laravelpassportapi.test/api/post/"+postId;
 
     let data = {
         title: "ajaxPostX1",
@@ -211,7 +211,7 @@ function deletePost(event){
     event.preventDefault();
 
     let postId=2;
-    let url = "http://apitest1.test/api/post/"+postId;
+    let url = "http://laravelpassportapi.test/api/post/"+postId;
     
     $.ajax({
         url: url,
